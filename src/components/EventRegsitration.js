@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./css/registration_form.css"
 
 const RegisterForm = () => {
     const [formData, setFormData] = useState({
@@ -32,10 +33,11 @@ const RegisterForm = () => {
     };
 
     return (
-        <div style={{ maxWidth: '600px', margin: '0 auto' }}>
+        <div id="register">
+            <div className="register-form-container">
             <h2>Register for ACES Membership</h2>
             <form onSubmit={handleSubmit}>
-                <div style={{ marginBottom: '15px' }}>
+                <div>
                     <label htmlFor="name">Name:</label>
                     <input
                         type="text"
@@ -127,6 +129,7 @@ const RegisterForm = () => {
 
                 <button type="submit" style={{ padding: '10px 20px', backgroundColor: '#007BFF', color: '#fff', border: 'none', cursor: 'pointer' }}>Submit</button>
             </form>
+        </div>
         </div>
     );
 };

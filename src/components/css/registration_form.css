@@ -1,0 +1,123 @@
+/* Register Form Styles */
+body
+{
+    /* background-image: url("../images/meetings-bg.jpg"); */
+}
+#register {
+    background-image: url("../images/meetings-bg.jpg"); /* Ensure path correctness */
+    background-size: cover; /* Cover the entire area */
+    background-repeat: no-repeat; 
+    background-position: center; /* Center the image */
+    min-height: 100vh; /* Full viewport height */
+    padding: 40px 20px;
+    display: flex; /* Center the content */
+    justify-content: center;
+    align-items: center;
+    color: #112363;
+}
+
+.register-form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    border-radius: 10px; /* Smooth corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    padding: 40px 30px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.register-form-container h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #112363;
+    margin-bottom: 30px;
+}
+
+.register-form-container form {
+    width: 100%;
+}
+
+.register-form-container label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #112363;
+    margin-bottom: 8px;
+}
+
+.register-form-container input,
+.register-form-container select,
+.register-form-container button {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.register-form-container input[type="file"] {
+    background-color: #fff;
+    padding: 8px;
+}
+
+.register-form-container button {
+    background-color: #f82249;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.register-form-container button:hover {
+    background-color: #e0072f;
+}
+
+.register-form-container input:focus,
+.register-form-container select:focus,
+.register-form-container button:focus {
+    outline: none;
+    border: 1px solid #f82249;
+    box-shadow: 0 0 5px rgba(248, 34, 73, 0.5);
+}
+
+.register-form-container select {
+    appearance: none; /* Remove default dropdown styling */
+    /* background-image: url("../images/arrow-down.svg"); Dropdown arrow icons */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.register-form-container select option {
+    color: #112363;
+}
+
+.register-form-container input::placeholder {
+    color: #aaa;
+}
+
+/* Navbar Offset */
+body {
+    padding-top: 100px; /* Adjust this based on navbar height */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .register-form-container {
+        padding: 20px 15px;
+    }
+
+    .register-form-container h2 {
+        font-size: 24px;
+    }
+
+    .register-form-container input,
+    .register-form-container select,
+    .register-form-container button {
+        font-size: 14px;
+    }
+}
